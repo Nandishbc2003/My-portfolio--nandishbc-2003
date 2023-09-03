@@ -300,8 +300,123 @@ So, as I embark on this exhilarating expedition of learning and growth, I'm not 
   <br /><br /><br />
 
      
+        <style>
+        
 
-    <style>
+        .gninihs-xob { /* Reversed "shining-box" */
+            width: 250px; /* Increased width */
+            height: 250px; /* Increased height */
+            background: linear-gradient(45deg, blue, green);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .gninihs-rats { /* Reversed "shining-star" */
+            font-size: 48px;
+            color: yellow;
+            cursor: pointer;
+        }
+
+        .neddih { /* Reversed "hidden" */
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 16px;
+            color: white;
+        }
+
+        @keyframes knilb { /* Reversed "blink" */
+            0%, 100% { visibility: hidden; }
+            50% { visibility: visible; }
+        }
+
+        .dtxet-dks { /* Reversed "sdk-text" */
+            position: absolute;
+            bottom: 10px; /* Adjust positioning as needed */
+            left: 10px; /* Adjust positioning as needed */
+        }
+
+        /* Add styles for the new heading */
+        #ce {
+            background-color: white;
+            text-align: center;
+            height:60px;
+            width:300px;
+        }
+
+        .knil-atc { /* Reversed "cta-link" */
+            margin-top: 20px;
+        }
+
+        .knil-atc a {
+            text-decoration: none;
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+    <title>Shining Star Box</title>
+
+   
+
+    <div class="gninihs-xob" id="gninihs-xob">
+        <span class="gninihs-rats" onclick="toggleAttributes()">🌟</span>
+        <ul id="gninihs-setaritib" class="neddih">
+            <li>Consistency</li>
+            <li>Confidence</li>
+            <li>Courage</li>
+            <li>Creativity</li>
+            <li>Competitiveness</li>
+        </ul>
+        <div class="dtxet-dks">
+            <a id="knil-kds" href="#" onclick="showSDK()">SDK</a>
+        </div>
+    </div><div id="ce">
+<h1>Click here for Software Development Projects Kit <!-- Orange heading -->
+ 
+    
+   <div class="knil-atc">
+       <a href="sdk.html">Click here</a>
+   </div></div></center></h1>
+    <script>
+        let isBlinking = false;
+
+        function toggleAttributes() {
+            const attributesList = document.getElementById("gninihs-setaritib");
+            attributesList.classList.toggle("neddih");
+        }
+
+        function toggleBlinking() {
+            isBlinking = !isBlinking;
+            const sdkLink = document.getElementById("knil-kds");
+            if (isBlinking) {
+                sdkLink.style.animation = "knilb 1s step-start infinite";
+            } else {
+                sdkLink.style.animation = "none";
+            }
+        }
+
+        function showSDK() {
+            toggleBlinking();
+        }
+    </script>
+
+
+<br /><br />
+ 
+ 
+ 
+ <style>
         body {
             margin: 0;
             padding: 0;
