@@ -439,6 +439,61 @@ So, as I embark on this exhilarating expedition of learning and growth, I'm not 
 
 <br /><br />
  
+ <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #reteuloc-yrellag {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      max-width: 800px;
+    }
+
+    #reyalpmi {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    #emage {
+      width: 100%;
+      flex-shrink: 0;
+    }
+  </style>
+  <title>Image Gallery</title>
+</head>
+<body>
+  <div id="reteuloc-yrellag">
+    <div id="reyalpmi">
+      <!-- Images will be dynamically added here via JavaScript -->
+    </div>
+  </div>
+  <script>
+    const galleryContainer = document.getElementById('reteuloc-yrellag');
+    const imageContainer = document.getElementById('reyalpmi');
+
+    const images = ['sch1.jpg', 'sch2.jpg', 'sch3.jpg','sch4.jpg','sch5.jpeg','sch6.png','sch7.png','sch8.png']; // Replace with your image URLs
+    let index = 0;
+
+    function changeImage() {
+      index = (index + 1) % images.length;
+      const translateValue = -index * 100 + '%';
+      imageContainer.style.transform = `translateX(${translateValue})`;
+    }
+
+    setInterval(changeImage, 3000); // Change image every 3 seconds
+
+    // Dynamically add images to the gallery
+    images.forEach(image => {
+      const imgElement = document.createElement('img');
+      imgElement.src = image;
+      imgElement.id = 'emage'; // Changed ID for the image
+      imageContainer.appendChild(imgElement);
+    });
+  </script><br><br>
  
  
  <style>
